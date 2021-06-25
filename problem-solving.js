@@ -3,8 +3,8 @@ const factorial = n => {
         return 1;
     } else {
         return n * factorial(n - 1);
-    }
-}
+    };
+};
 
 const maxNumber = (array, integer) => {
     let max = 0;
@@ -13,9 +13,9 @@ const maxNumber = (array, integer) => {
         const factorialNumber = factorial(number);
         if (factorialNumber > max) {
             max = factorialNumber;
-        }
-    }
+        };
+    };
     return max;
-}
+};
 
 console.log(maxNumber([1, 4, 7, 16], 4));
